@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "HomeServlet", value = "")
+@WebServlet(name = "HomeServlet", urlPatterns = {"/homeView"})
 public class HomeServlet extends HttpServlet {
     private final CategoryService categoryService = new CategoryService();
     private final ProductService productService = new ProductService();
